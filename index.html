@@ -2,128 +2,298 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokégram | Catch the Moment</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pokégram Pro | Pokémon Social Platform</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+
     <div class="app-container">
-        <!-- Navigation -->
+
+        <!-- ================= NAVBAR ================= -->
+
         <nav class="navbar">
+
             <div class="nav-content">
+
+                <!-- Logo -->
+
                 <div class="logo">
+
                     <div class="logo-img-css"></div>
-                    <span class="logo-text">Pokégram</span>
+
+                    <span class="logo-text">Pokégram Pro</span>
+
                 </div>
+
+                <!-- Search -->
+
                 <div class="search-bar">
+
                     <i class="fas fa-search"></i>
-                    <input type="text" placeholder="Search Trainers or Pokémon...">
+
+                    <input type="text" placeholder="Search Trainers or Pokémon..." />
+
                 </div>
+
+                <!-- Nav Icons -->
+
                 <div class="nav-icons">
-                    <i class="fas fa-home home-link active" title="Go to Pokémon Center (Home)"></i>
-                    <i class="far fa-paper-plane message-link" title="Pidgey Post (Direct Messages)"></i>
-                    <i class="far fa-plus-square create-link" title="Catch a Pokémon (New Post)"></i>
-                    <i class="far fa-compass explore-link" title="Open Town Map (Explore)"></i>
-                    <i class="far fa-heart friendship-link" title="Check Friendship (Notifications)"></i>
-                    <div class="profile-pic-small trainer-link" title="Open Trainer Card (Profile)">
+
+                    <i class="fas fa-home home-link active" title="Home"></i>
+
+                    <i class="far fa-paper-plane message-link" title="Messages"></i>
+
+                    <i class="far fa-plus-square create-link" title="Create Post"></i>
+
+                    <i class="far fa-compass explore-link" title="Explore"></i>
+
+                    <i class="far fa-heart friendship-link" title="Notifications"></i>
+
+                    <!-- Theme Button -->
+
+                    <button id="themeToggle" class="theme-btn">
+
+                        <i class="fas fa-moon"></i>
+
+                    </button>
+
+                    <!-- Profile -->
+
+                    <div class="profile-pic-small trainer-link">
+
                         <img src="assets/my_profile.png" alt="Profile">
+
                     </div>
+
                 </div>
+
             </div>
+
         </nav>
 
+        <!-- ================= MAIN ================= -->
+
         <main class="main-content">
-            <div class="feed-section">
+
+            <!-- ================= FEED SECTION ================= -->
+
+            <section class="feed-section">
+
                 <!-- Stories -->
+
                 <div class="stories-container">
+
                     <div class="story">
+
                         <div class="story-img-wrapper active">
-                            <img src="assets/story1.png" alt="Ash">
+
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJst_mkmP5vSJLx1uSqVkhXTEfMQAd51zouw&s"
+                                alt="Ash">
+
                         </div>
+
                         <span>Ash_K</span>
+
                     </div>
+
                     <div class="story">
+
                         <div class="story-img-wrapper active">
-                            <img src="assets/story2.png" alt="Misty">
+
+                            <img src="https://archives.bulbagarden.net/media/upload/thumb/3/39/Baby_Misty.png/220px-Baby_Misty.png"
+                                alt="Misty">
+
                         </div>
+
                         <span>Misty_Water</span>
+
                     </div>
+
                     <div class="story">
+
                         <div class="story-img-wrapper active">
-                            <img src="assets/story3.png" alt="Brock">
+
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOsBK1vAJF_riWgvY2hU_Zj8WjzreTQ4_nqA&s"
+                                alt="Brock">
+
                         </div>
+
                         <span>RockSolid</span>
+
                     </div>
+
                     <div class="story">
+
                         <div class="story-img-wrapper">
-                            <img src="assets/story4.png" alt="Gary">
+
+                            <img src="https://i.redd.it/acw9ebwd7k1c1.jpg" alt="Gary">
+
                         </div>
+
                         <span>Gary_Oak</span>
+
                     </div>
+
                     <div class="story">
+
                         <div class="story-img-wrapper">
-                            <img src="assets/story5.png" alt="Cynthia">
+
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3awC5vKaXvdJfEZM1IOCQlyxquuN7fsi_gw&s"
+                                alt="Cynthia">
+
                         </div>
+
                         <span>Champion_C</span>
+
                     </div>
+
                 </div>
 
                 <!-- Feed -->
-                <div id="feed" class="feed">
-                    <!-- Posts will be injected here -->
-                </div>
-            </div>
 
-            <!-- Sidebar -->
-            <aside class="sidebar">
-                <div class="user-profile">
-                    <div class="profile-pic-medium">
-                        <img src="assets/my_profile.png" alt="User">
-                    </div>
-                    <div class="user-info">
-                        <span class="username">red_champion</span>
-                        <span class="full-name">Red Kanto</span>
-                    </div>
-                    <button class="switch-btn">Switch</button>
+                <div id="feed" class="feed">
+
+                    <!-- Posts injected from JS -->
+
                 </div>
+
+            </section>
+
+            <!-- ================= SIDEBAR ================= -->
+
+            <aside class="sidebar">
+
+                <!-- User Profile -->
+
+                <div class="user-profile">
+
+                    <div class="profile-pic-medium">
+
+                        <img src="assets/my_profile.png" alt="User">
+
+                    </div>
+
+                    <div class="user-info">
+
+                        <span class="username">red_champion</span>
+
+                        <span class="full-name">Red Kanto</span>
+
+                    </div>
+
+                    <button class="switch-btn">
+
+                        Switch
+
+                    </button>
+
+                </div>
+
+                <!-- Suggestions -->
 
                 <div class="suggestions">
+
                     <div class="suggestions-header">
+
                         <span>Suggestions For You</span>
-                        <button class="see-all-btn">See All</button>
+
+                        <button class="see-all-btn">
+
+                            See All
+
+                        </button>
+
                     </div>
+
                     <div class="suggestion-list">
-                        <!-- Suggestions will be injected here -->
+
+                        <!-- Suggestions injected from JS -->
+
                     </div>
+
                 </div>
 
+                <!-- Footer -->
+
                 <footer class="sidebar-footer">
-                    <p>About • Help • Press • API • Jobs • Privacy • Terms • Locations • Language • Pokégram Verified
+
+                    <p>
+                        About • Help • Press • API • Jobs • Privacy • Terms •
+                        Locations • Language • Pokégram Verified
                     </p>
-                    <p class="copyright">© 2026 POKÉGRAM FROM SILPH CO.</p>
+
+                    <p class="copyright">
+
+                        © 2026 POKÉGRAM FROM SILPH CO.
+
+                    </p>
+
                 </footer>
+
             </aside>
+
         </main>
 
-        <!-- Bottom Mobile Nav -->
+        <!-- ================= MOBILE NAV ================= -->
+
         <nav class="mobile-nav">
+
             <i class="fas fa-home home-link active"></i>
+
             <i class="fas fa-search"></i>
-            <i class="far fa-plus-square create-link" title="Catch a Pokémon (New Post)"></i>
-            <i class="far fa-heart friendship-link" title="Check Friendship (Notifications)"></i>
-            <div class="profile-pic-tiny trainer-link" title="Open Trainer Card (Profile)">
+
+            <i class="far fa-plus-square create-link"></i>
+
+            <i class="far fa-heart friendship-link"></i>
+
+            <div class="profile-pic-tiny trainer-link">
+
                 <img src="assets/my_profile.png" alt="Profile">
+
             </div>
+
         </nav>
+
     </div>
+
+    <!-- ================= CREATE POST MODAL ================= -->
+
+    <div class="modal" id="postModal">
+
+        <div class="modal-content">
+
+            <h2>Create New Post</h2>
+
+            <input type="text" id="postImage" placeholder="Enter Pokémon Image URL" />
+
+            <textarea id="postCaption" placeholder="Write caption..."></textarea>
+
+            <button id="sharePostBtn">
+
+                Share Post
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- ================= SCRIPT ================= -->
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
